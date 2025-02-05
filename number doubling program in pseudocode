@@ -1,0 +1,5 @@
+start
+  input myNumber
+  doubleNumber = myNumber * 2
+  output doubleNumber
+stop
