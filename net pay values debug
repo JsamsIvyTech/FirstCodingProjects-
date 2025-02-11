@@ -1,0 +1,24 @@
+start
+   Declarations
+      string name
+      num hours
+      num rate
+      string DEDUCTION = 45
+      string EOFNAME = "ZZZ"
+      num gross
+      num net
+   name = input("enter first name or ZZZ to quit")
+   if name not equal to EOFNAME then
+      hours = input("enter hours worked for", name)
+      rate = input("enter hourly rate for ", name)
+      gross = hours * rate
+      net = gross - DEDUCTION
+      while net > 0 then
+         output "Net pay for ", name, " is ", net
+      else
+          output "Deductions not covered. Net is 0."
+      endwhile
+      name = input("enter first name or ZZZ to quit")
+   endif
+   output "End of job"
+stop
