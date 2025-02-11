@@ -1,0 +1,21 @@
+start
+    declarations
+       string word = input
+       string dictionaryWord
+       string firstQustion = "what is the word your looking for?"
+       string foundIt = "this is the word your looking for"
+       string turnFoward = "turning the page forward"
+       string turnBack = "turning the page back"
+    output firstQuestion
+    input word
+       if word = dictionaryWord then
+           output foundIt
+       else
+           if word > dictionaryWord
+              output turnFoward
+           else
+              output turnBack
+           endif
+       endif
+stop
+           
