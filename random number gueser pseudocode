@@ -1,0 +1,20 @@
+start
+    declarations 
+        num randInt = (1, 100) 
+        num myNumber = input
+        string firstQuestion = "enter number between 1 through 100"
+        string correctInt = "you got it correct. nice job!"
+        string toHigh = "the number was too high"
+        string toLow = "the number is too low"
+    output firstQuestion
+    input myNumber
+        if myNumber = randInt then
+            output correctInt
+        else
+            if myNumber > randInt then
+                output toHigh
+            else
+                output toLow
+            endif
+        endif
+stop
