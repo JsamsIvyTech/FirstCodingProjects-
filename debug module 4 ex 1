@@ -1,0 +1,20 @@
+start
+   Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+   firstTest = input("Enter first score or 0 to quit")
+   while firstTest <> 0
+      output "Enter second score "
+      input secondTest
+      average = (firstTest + secondTest) / 2
+      ouput "Average is ", average
+      if average >= PASSING then
+         output "Pass"
+      else
+         output "Fail"
+      endif
+      firstTest = input("Enter first score or 0 to quit")
+   endwhile
+stop
