@@ -1,0 +1,16 @@
+start
+	lower pen to paper
+		if pen is facing right then
+			move 1-inch right
+		else
+			turn 90 degrees right
+		endif
+	draw circle with a diameter of 1-inch 
+	draw circle clockwise 
+	raise pen from paper
+		if pen is facing right then
+			move 1-inch right
+		else
+			turn 90 degrees right
+		endif
+end
