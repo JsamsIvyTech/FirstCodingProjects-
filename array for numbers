@@ -1,0 +1,26 @@
+start 
+
+	num index 
+	num SIZE = 20 
+	num numbers[SIZE] = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	string willYouContinue = "Y"
+	string extraNumbers
+
+	index = 0
+	output "will you enter more numbers? (Y/N)"
+	input extraNumbers
+	
+	if index > SIZE AND extraNumbers = willYouContinue
+		output "enter a number", index
+		input numbers[index]
+		index = index + 1
+		output "will you enter more numbers? (Y/N)"
+		input extraNumbers 
+	endif 
+
+	output "in reverse order: "
+	if index > 0 then
+		index = index - 1
+		output numbers[index]
+	endif 
+end
